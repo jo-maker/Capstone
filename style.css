@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #000000;
+    color: #fff;
+}
+.container{
+    padding: 10px 10%;
+}
+/************header css*******************/
+.logo{
+    margin: 20px;
+    font-size: 25px;
+    color: #ff6347;
+    font-style: italic;
+    font-weight: bold;
+}
+#header{
+    height: 80px;
+    width: 100%;
+    background: transparent;
+    position: fixed;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    color: #fff;
+    margin: 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+nav ul li a{
+    color: lightskyblue;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    height: 4px;
+    width: 0;
+    background: #ff004f;
+    left: 0;
+    bottom: -6px;
+    position: absolute;
+    transition: .6s;
+}
+nav ul li a:hover::after{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+/***********************welcome page css********************************/
+#welcome{
+    height: 100vh;
+    width: 100%;
+    background: url(images/Joe1.jpg);
+    background-size: cover;
+    background-attachment:initial;
+    background-position:top;
+    
+  
+}
+.welcome-col-1{
+    font-size: 20px;
+    margin-top: 22%;
+}
+.welcome-col-1 p{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.welcome-col-1  span{
+    color: #ff004f;
+}
+/************88about us*********************/
+#about{
+    padding: 80px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.about-1{
+    flex-basis: 40%;
+}
+.about-1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+.about-2{
+    flex-basis: 50%;
+}
+.about-2 h2{
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+}
+.about-2 p{
+   font-size: 25px;
+   text-align: left;
+}
+.btn{
+    display:block;
+    width: fit-content;
+    color: #fff;
+    font-size: 18px;
+    background: #ff004f;
+    border-radius: 20px;
+    padding: 14px 20px;
+    margin: 50px auto;
+}
+/*************************services**********************/
+#services{
+    padding: 40px 0;
+}
+.service-title{
+    text-align: center;
+    margin-top: 15px;
+}
+.service-title h1{
+    margin-bottom: 20px;
+}
+.service-title p{
+    font-size: 23px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-bottom: 30px;
+}
+.service{
+    background: grey;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.service h3{
+    margin: 14px 15px;
+    font-size: 25px;
+    color: #ff6347;
+    margin-bottom: 30px;
+}
+.service p{
+    font-size: 18px;
+    text-align:justify;
+    margin-bottom: 20px;
+    margin: 14px 15px;
+}
+.service:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+
+}
+/**************************My work****************************/
+#mywork{
+    padding: 30px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+}
+.work-title{
+    margin-bottom: 35px;
+}
+.work-title h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.work-title p{
+    font-size: 20px;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work-text{
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+}
+/********************************contact****************************/
+#conatct{
+    padding: 40px 0;
+}
+.contact-1{
+    flex-basis: 40%;
+}
+.contact-1 h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact-1 p{
+    margin-top: 20px;
+}
+.contact-1 p i{
+    margin-right: 15px;
+    color: lightgrey;
+}
+.socials{
+    margin-top: 25px;
+}
+.socials a{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 18px;
+}
+.socials a{
+    transition: transform 0.5s;
+    display: inline-block;
+}
+.socials a:hover{
+    transform: translateY(-5px);
+    color: #ff004f;
+}
+/***********/
+.contact-2{
+    flex-basis: 50%;
+}
+.contact-2 form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.contact-text p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 24px;
+}
+.btn2{
+    background: #ff004f;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    display: block;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+}
+/*************copyright*************************************/
+.copy{
+    background: gray;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************small screen**************/
+@media only screen and (max-width: 850px) {
+        .welcome-col-1 p{
+            margin-top: 80%;
+        }
+        #welcome{
+            background-position-y: bottom;
+            background-size: cover;
+        }
+        #about{
+            padding: 50px 0;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .about-1 ,.about-2{
+            flex-basis: 100%;
+        }
+        .about-1 img{
+            width: 100%;
+        }
+        .about-2 h2{
+            margin-top: 30px;
+        }
+        .about-2 p{
+            margin-top: 30px;
+            text-align: left;
+            padding: 14px 20px;
+        }
+        .service-title h1{
+            margin-top: 50px;
+            font-size: 50px;
+        }
+        .service-title p{
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .work-title h1{
+            font-size: 60px;
+        }
+        .work-title p{
+            font-size: 30px;
+            text-align: center;
+        }
+        .contact-1, .contact-2{
+            flex-basis: 100%;
+        }
+        .contact-1 h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        .contact-1 p{
+            text-align: center;
+        }
+        .socials{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
